@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" conntent="width=device-width, initial-scale=1.0">
+		<script src="js/clases.js"></script>
+		<script src="js/ejercicioGastos.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/ejercicioGastos.css">
+		<title>Gastos de la casa</title>
+	</head>
+	<body>
+		<section>
+			<h2>
+				Gastos de casa
+			</h2>
+			<article>
+				<h2>
+					Ingreso de Gastos
+				</h2>
+				<form id="formAgregar">
+					<fieldset name="userinfo">
+						<legend>Datos</legend>
+						<label for="dia">Dia</label>
+						<input type="number" id="dia" min="1" max="31">
+						<label for="descripcion">Descripcion del gasto</label>
+						<input type="text" name="descripcion" id="descripcion" required>
+						<label for="monto">Monto</label>
+						<input type="number" id="monto" min="0" requiered>
+						<br>
+						<button id="botonAgregar" type="button" value="button">Agregar</button>
+					</fieldset>
+				</form>
+			</article>
+			<article>
+				<h2>
+					Consultar todos los gastos ordenados por monto
+				</h2>
+				<input type="radio" id="crec" name="tipoOrden" checked="checked">creciente
+				<input type="radio" id="decrec" name="tipoOrden">decreciente
+				<br>
+				<button id="botonConsultar" type="button" value="consutar">
+					Consultar
+				</button>
+				<table id="tablaG">
+					
+				</table>
+				<h2>
+					Consultar gasto mayor
+				</h2>
+				<button id="botonMayor" type="button" value="promedio">
+					Consultar Mayor
+				</button>
+				<p id="gastoMayor">
+					
+				</p>
+				<h2>
+					Consultar promedio
+				</h2>
+				<button id="botonPromedio" type="button" value="promedio">
+					Consultar Promedio
+				</button>
+				<p id="gastoPromedio">
+					
+				</p>
+				<h2>Consultar total por dia</h2>
+				<button id="botonDiario" type="button" value="diario">
+					Consultar total por cada dia
+				</button>
+				<ul id="gastosDiarios">
+					
+				</ul>
+			</article>
+		</section>
+	</body>
+</html>
+
+
